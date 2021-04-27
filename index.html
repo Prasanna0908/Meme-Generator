@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Meme API</title>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Free MEME Generator 😀</h1>
+
+    </header>
+
+    <div class="header">
+        <div class="options">
+
+            <p>
+                <textarea id="top-text"></textarea>
+                <span>Text size: <input type="range" id="top-text-size-input" min="0.05" max="0.25" value="0.15"
+                        step="0.01"></span>
+
+            </p>
+
+            <p>
+                <textarea id="bottom-text"></textarea>
+                <span>Text size: <input type="range" id="bottom-text-size-input" min="0.05" max="0.25" value="0.15"
+                        step="0.01"></span>
+            </p>
+
+
+
+            <p>
+                <button class="generate-btn">Generate!</button>
+            </p>
+
+            <button id="download-page-as-image">download img</button>
+
+
+            <!-- <p>
+                <textarea id="top-text"></textarea>
+                Text size: <input type="range" id="top-text-size-input" min="0.05" max="0.25" value="0.15" step="0.01">
+            </p>
+            <p>
+                <textarea id="bottom-text"></textarea>
+                Text size: <input type="range" id="bottom-text-size-input" min="0.05" max="0.25" value="0.15"
+                    step="0.01">
+            </p>
+            <p>
+                <input type="file" id="image-input" accept="image/*">
+            </p>
+            <p>
+                <button id="generate-btn">Generate!</button>
+            </p>
+            <p>
+                <canvas id="meme-canvas" title="Right click -> &quot;Save image as...&quot;"></canvas>
+            </p> -->
+        </div>
+
+        <div class="images" id="content">
+            <img src="images/1.png" class="imag" alt="">
+            <div class="firstLine"></div>
+            <div class="secondLine"></div>
+        </div>
+    </div>
+
+    <div class="main--container">
+
+        <!-- 
+        <div class="container">
+            <img src="images/1.png" alt="Meme" class="Images">
+            <h3>Meme title : </h3>
+        </div> -->
+    </div>
+
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
