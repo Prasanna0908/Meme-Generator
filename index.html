@@ -39,6 +39,13 @@
                 <button class="generate-btn">Generate!</button>
             </p>
 
+
+
+            <p>
+                <textarea id='filename' placeholder="Enter Meme Name.."></textarea>
+
+            </p>
+
             <button id="download-page-as-image">download img</button>
 
 
@@ -62,10 +69,19 @@
             </p> -->
         </div>
 
-        <div class="images" id="content">
+        <div class="images small__container">
             <img src="images/1.png" class="imag" alt="">
-            <div class="firstLine"></div>
-            <div class="secondLine"></div>
+
+
+
+            <aside draggable="true" class="dragme" data-item="0">
+                <div class="firstLine draggable"></div>
+            </aside>
+            <aside draggable="true" class="dragme second" data-item="1">
+                <div class="secondLine"></div>
+            </aside>
+
+
         </div>
     </div>
 
