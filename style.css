@@ -25,12 +25,26 @@
     padding: 5rem;
 }
 
+aside {
+    position: absolute;
+    left: 20rem;
+    top: 10rem;
+    /* set these so Chrome doesn't return 'auto' from getComputedStyle */
+}
+
+.second {
+    left: 20rem;
+    top: 30rem;
+}
+
 .firstLine {
     font-size: 1.6rem;
     position: absolute;
     top: 15%;
     left: 25%;
-    z-index: 10;
+    /* background-color: brown; */
+    padding: 2rem;
+    cursor: pointer;
 }
 
 .secondLine {
@@ -38,7 +52,17 @@
     position: absolute;
     top: 75%;
     left: 25%;
-    z-index: 10;
+    /* background-color: brown; */
+    padding: 2rem;
+    cursor: pointer;
+}
+
+.draggable {
+    cursor: move;
+}
+
+.draggable.dragging {
+    opacity: 0.5;
 }
 
 html {
